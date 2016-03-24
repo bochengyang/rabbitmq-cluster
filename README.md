@@ -3,7 +3,9 @@ This is a RabbitMQ docker image for setting up rabbitmq cluster. This image also
 
 ## Quick start
 There are some parameters for passing into container.
+
 RABBITMQ_ERLANG_COOKIE: The key between cluster nodes.
+
 CLUSTER_WITH: Point to the cluster starter
 
 ### For non-swarm mode
