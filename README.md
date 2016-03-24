@@ -78,4 +78,5 @@ $ docker -H tcp://swarmmaster:50000 exec [container_name] command
 
 ## Reference
 https://github.com/bijukunjummen/docker-rabbitmq-cluster
+
 https://github.com/docker-library/rabbitmq
