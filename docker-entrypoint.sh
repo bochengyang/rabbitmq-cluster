@@ -141,7 +141,7 @@ if [ "$1" = 'rabbitmq-server' ]; then
 	if [ -z "$CLUSTER_WITH" -o "$CLUSTER_WITH" = "$(hostname)" ]; then
 		echo "Running as single server"
 
-		RABBITMQ_LOGS=${RABBITMQ_LOGS:="/var/log/rabbitmq/rabbit@${HOSTNAME}.log"}
+		RABBITMQ_LOGS="/var/log/rabbitmq/rabbit@${HOSTNAME}.log"
 		if [ -e "$RABBITMQ_LOGS" ]; then
 			rm /var/log/rabbitmq/rabbit@$(hostname).log
 		fi
